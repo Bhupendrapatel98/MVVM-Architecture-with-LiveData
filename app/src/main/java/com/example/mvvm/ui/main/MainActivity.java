@@ -14,6 +14,12 @@ import com.example.mvvm.data.model.User;
 
 import java.util.List;
 
+//The 4 steps of MVVM
+// 1. Create Model (POJO)
+// 2. Create Repository (fetch data from API or DB)
+// 3. Create ViewModel (extend ViewModel, get liveData from Repository)
+// 4. Create Activity (observe ViewModel & display data)
+
 public class MainActivity extends AppCompatActivity {
 
     View view;
