@@ -12,6 +12,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Reposetory {
+        
+        //MutableLiveData is commonly used since it provides the postValue(), setValue() methods publicly, something that LiveData class doesn’t provide.
+        //LiveData has no public method to modify its data.
+        //You can't update its value like getUser().setValue(userObject) or getUser().postValue(userObject)
+        //So when you don't want your data to be modified use LiveData If you want to modify your data later use MutableLiveData
+        //LiveData is that the data will not be updated when your View is in the background and when the view will come in the foreground, then it will get the updated data only.
+
 
         public MutableLiveData<List<User>> requestHolidays(){
 
